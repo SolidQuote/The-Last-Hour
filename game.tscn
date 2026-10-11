@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://djfetwvkyiyup"]
 
-[ext_resource type="Script" uid="uid://j80wbji752g3" path="res://game.gd" id="1_80nbo"]
+[ext_resource type="Script" uid="uid://j80wbji752g3" path="res://Script/Script Inflation/game.gd" id="1_80nbo"]
+
 
 [node name="Control" type="Control" unique_id=135503798]
 layout_mode = 3

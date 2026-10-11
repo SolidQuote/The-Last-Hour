@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://yvakv0n5tt4e"]
 
 [ext_resource type="Texture2D" uid="uid://ba7wu3sqerhpd" path="res://istockphoto-641236218-612x612.jpg" id="1_3ykye"]
-[ext_resource type="AudioStream" uid="uid://dvk5qcv3x1due" path="res://631532__szegvari__alien-planet-wind-base-wave-dark-horror-thriller-atmo-atmosphere-cinematic-surround.mp3" id="1_x2hje"]
-[ext_resource type="Script" uid="uid://b15bhgw48kgo" path="res://margin_container.gd" id="3_3ykye"]
+[ext_resource type="AudioStream" uid="uid://dvk5qcv3x1due" path="res://Music/631532__szegvari__alien-planet-wind-base-wave-dark-horror-thriller-atmo-atmosphere-cinematic-surround.mp3" id="1_x2hje"]
+[ext_resource type="Script" uid="uid://b15bhgw48kgo" path="res://Script/Script Inflation/margin_container.gd" id="3_3ykye"]
+
 
 [sub_resource type="LabelSettings" id="LabelSettings_685lo"]
 font_size = 30

@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://bvgctg6lwo0xe"]
 
-[ext_resource type="Texture2D" uid="uid://c3wp35awntjic" path="res://aed0156189df39e2a65d11d3370de14c.jpg" id="1_4gspy"]
-[ext_resource type="AudioStream" uid="uid://bsh2a3w6s5dlu" path="res://753859__evanboyerman__outdoor-fireworks-ambience-in-suburb-neighborhood-at-night-stereo-ambience.mp3" id="1_aj41r"]
-[ext_resource type="Script" uid="uid://d2876b1wj6hop" path="res://storyscreen.gd" id="1_dx26i"]
+[ext_resource type="Texture2D" uid="uid://c3wp35awntjic" path="res://Images/Other/aed0156189df39e2a65d11d3370de14c.jpg" id="1_4gspy"]
+[ext_resource type="AudioStream" uid="uid://bsh2a3w6s5dlu" path="res://Music/753859__evanboyerman__outdoor-fireworks-ambience-in-suburb-neighborhood-at-night-stereo-ambience.mp3" id="1_aj41r"]
+[ext_resource type="Script" uid="uid://d2876b1wj6hop" path="res://Script/Script Inflation/storyscreen.gd" id="1_dx26i"]
+
 
 [sub_resource type="LabelSettings" id="LabelSettings_685lo"]
 font_size = 30

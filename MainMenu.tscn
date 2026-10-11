@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://bax7xx8wkxhrf"]
 
-[ext_resource type="Script" uid="uid://bv3gnvvhc34jl" path="res://main_menu.gd" id="1_h7a2f"]
+[ext_resource type="Script" uid="uid://bv3gnvvhc34jl" path="res://Script/Script Inflation/main_menu.gd" id="1_h7a2f"]
 [ext_resource type="Texture2D" uid="uid://ba7wu3sqerhpd" path="res://istockphoto-641236218-612x612.jpg" id="1_i26rj"]
-[ext_resource type="AudioStream" uid="uid://dvk5qcv3x1due" path="res://631532__szegvari__alien-planet-wind-base-wave-dark-horror-thriller-atmo-atmosphere-cinematic-surround.mp3" id="2_eiy7p"]
-[ext_resource type="Script" uid="uid://8dmwepdwn0um" path="res://settings.gd" id="3_qoqlk"]
+[ext_resource type="AudioStream" uid="uid://dvk5qcv3x1due" path="res://Music/631532__szegvari__alien-planet-wind-base-wave-dark-horror-thriller-atmo-atmosphere-cinematic-surround.mp3" id="2_eiy7p"]
+[ext_resource type="Script" uid="uid://8dmwepdwn0um" path="res://Script/Script Inflation/settings.gd" id="3_qoqlk"]
 
 [sub_resource type="FontFile" id="FontFile_wohep"]
 cache/0/variation_coordinates = {}
