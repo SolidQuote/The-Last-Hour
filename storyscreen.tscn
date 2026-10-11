@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://bvgctg6lwo0xe"]
+
+[ext_resource type="Texture2D" uid="uid://c3wp35awntjic" path="res://aed0156189df39e2a65d11d3370de14c.jpg" id="1_4gspy"]
+[ext_resource type="AudioStream" uid="uid://bsh2a3w6s5dlu" path="res://753859__evanboyerman__outdoor-fireworks-ambience-in-suburb-neighborhood-at-night-stereo-ambience.mp3" id="1_aj41r"]
+[ext_resource type="Script" uid="uid://d2876b1wj6hop" path="res://storyscreen.gd" id="1_dx26i"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_685lo"]
+font_size = 30
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 20
+
+[node name="Control" type="Control" unique_id=1050052534]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1924.0
+offset_bottom = 1082.0
+script = ExtResource("1_dx26i")
+
+[node name="background" type="TextureRect" parent="." unique_id=755355388]
+layout_mode = 0
+offset_right = 1962.0
+offset_bottom = 1096.0
+texture = ExtResource("1_4gspy")
+
+[node name="Story text" type="Label" parent="." unique_id=1772550546]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 396.0
+offset_right = 1838.0
+offset_bottom = 618.0
+text = "You are trapped in a cave during the final hour of a war waged against humanity. The entrance to the cave has collapsed.
+
+You are not alone.
+
+Find a new way out."
+label_settings = SubResource("LabelSettings_685lo")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="skip" type="Button" parent="." unique_id=701870047]
+layout_mode = 0
+offset_left = 855.0
+offset_top = 736.0
+offset_right = 934.0
+offset_bottom = 767.0
+scale = Vector2(2.855, 2.855)
+text = "Continue"
+
+[node name="gunfire" type="AudioStreamPlayer2D" parent="." unique_id=1076533494]
+stream = ExtResource("1_aj41r")
+autoplay = true
+
+[connection signal="pressed" from="skip" to="." method="_on_skip_pressed"]

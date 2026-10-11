@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://yvakv0n5tt4e"]
+
+[ext_resource type="Texture2D" uid="uid://ba7wu3sqerhpd" path="res://istockphoto-641236218-612x612.jpg" id="1_3ykye"]
+[ext_resource type="AudioStream" uid="uid://dvk5qcv3x1due" path="res://631532__szegvari__alien-planet-wind-base-wave-dark-horror-thriller-atmo-atmosphere-cinematic-surround.mp3" id="1_x2hje"]
+[ext_resource type="Script" uid="uid://b15bhgw48kgo" path="res://margin_container.gd" id="3_3ykye"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_685lo"]
+font_size = 30
+
+[node name="Control" type="Control" unique_id=1043280060]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Background" type="TextureRect" parent="." unique_id=1233565822]
+layout_mode = 0
+offset_right = 2057.0
+offset_bottom = 1144.0
+texture = ExtResource("1_3ykye")
+
+[node name="Music" type="AudioStreamPlayer2D" parent="." unique_id=1374386161]
+stream = ExtResource("1_x2hje")
+autoplay = true
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1198815445]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 1113.0
+offset_bottom = 610.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.665, 1.665)
+script = ExtResource("3_3ykye")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1982509383]
+layout_mode = 2
+alignment = 1
+
+[node name="mute" type="CheckBox" parent="MarginContainer/VBoxContainer" unique_id=1144867470]
+layout_mode = 2
+text = "Mute"
+
+[node name="Resolutions" type="OptionButton" parent="MarginContainer/VBoxContainer/mute" unique_id=1991437764]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 69.0
+offset_right = 1129.0
+offset_bottom = 107.0
+selected = 0
+item_count = 3
+popup/item_0/text = "1920x1080"
+popup/item_0/id = 0
+popup/item_1/text = "1600x900"
+popup/item_1/id = 1
+popup/item_2/text = "1280x720"
+popup/item_2/id = 2
+
+[node name="Volume" type="HSlider" parent="MarginContainer/VBoxContainer" unique_id=710058471]
+layout_mode = 2
+max_value = 50.0
+rounded = true
+
+[node name="Vol_label" type="Label" parent="." unique_id=1985801398]
+layout_mode = 0
+offset_left = 892.0
+offset_top = 506.0
+offset_right = 966.0
+offset_bottom = 534.0
+text = "Volume"
+label_settings = SubResource("LabelSettings_685lo")
+
+[node name="Back" type="Button" parent="." unique_id=1340880936]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 51.0
+offset_right = 94.0
+offset_bottom = 82.0
+scale = Vector2(2.89, 2.89)
+text = "Back "
+
+[connection signal="toggled" from="MarginContainer/VBoxContainer/mute" to="MarginContainer" method="_on_mute_toggled"]
+[connection signal="item_selected" from="MarginContainer/VBoxContainer/mute/Resolutions" to="MarginContainer" method="_on_resolutions_item_selected"]
+[connection signal="value_changed" from="MarginContainer/VBoxContainer/Volume" to="MarginContainer" method="_on_volume_value_changed"]
+[connection signal="pressed" from="Back" to="MarginContainer" method="_on_back_pressed"]

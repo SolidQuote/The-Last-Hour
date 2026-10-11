@@ -1,0 +1,299 @@
+[gd_scene format=3 uid="uid://bax7xx8wkxhrf"]
+
+[ext_resource type="Script" uid="uid://bv3gnvvhc34jl" path="res://main_menu.gd" id="1_h7a2f"]
+[ext_resource type="Texture2D" uid="uid://ba7wu3sqerhpd" path="res://istockphoto-641236218-612x612.jpg" id="1_i26rj"]
+[ext_resource type="AudioStream" uid="uid://dvk5qcv3x1due" path="res://631532__szegvari__alien-planet-wind-base-wave-dark-horror-thriller-atmo-atmosphere-cinematic-surround.mp3" id="2_eiy7p"]
+[ext_resource type="Script" uid="uid://8dmwepdwn0um" path="res://settings.gd" id="3_qoqlk"]
+
+[sub_resource type="FontFile" id="FontFile_wohep"]
+cache/0/variation_coordinates = {}
+cache/0/face_index = 0
+cache/0/embolden = 0.0
+cache/0/transform = Transform2D(1, 0, 0, 1, 0, 0)
+cache/0/spacing_top = 0
+cache/0/spacing_bottom = 0
+cache/0/spacing_space = 0
+cache/0/spacing_glyph = 0
+cache/0/baseline_offset = 0.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/17/0/ascent = 0.0
+cache/0/17/0/descent = 0.0
+cache/0/17/0/underline_position = 0.0
+cache/0/17/0/underline_thickness = 0.0
+cache/0/17/0/scale = 1.0
+cache/0/18/0/ascent = 0.0
+cache/0/18/0/descent = 0.0
+cache/0/18/0/underline_position = 0.0
+cache/0/18/0/underline_thickness = 0.0
+cache/0/18/0/scale = 1.0
+cache/0/19/0/ascent = 0.0
+cache/0/19/0/descent = 0.0
+cache/0/19/0/underline_position = 0.0
+cache/0/19/0/underline_thickness = 0.0
+cache/0/19/0/scale = 1.0
+cache/0/20/0/ascent = 0.0
+cache/0/20/0/descent = 0.0
+cache/0/20/0/underline_position = 0.0
+cache/0/20/0/underline_thickness = 0.0
+cache/0/20/0/scale = 1.0
+cache/0/21/0/ascent = 0.0
+cache/0/21/0/descent = 0.0
+cache/0/21/0/underline_position = 0.0
+cache/0/21/0/underline_thickness = 0.0
+cache/0/21/0/scale = 1.0
+cache/0/22/0/ascent = 0.0
+cache/0/22/0/descent = 0.0
+cache/0/22/0/underline_position = 0.0
+cache/0/22/0/underline_thickness = 0.0
+cache/0/22/0/scale = 1.0
+cache/0/23/0/ascent = 0.0
+cache/0/23/0/descent = 0.0
+cache/0/23/0/underline_position = 0.0
+cache/0/23/0/underline_thickness = 0.0
+cache/0/23/0/scale = 1.0
+cache/0/24/0/ascent = 0.0
+cache/0/24/0/descent = 0.0
+cache/0/24/0/underline_position = 0.0
+cache/0/24/0/underline_thickness = 0.0
+cache/0/24/0/scale = 1.0
+cache/0/25/0/ascent = 0.0
+cache/0/25/0/descent = 0.0
+cache/0/25/0/underline_position = 0.0
+cache/0/25/0/underline_thickness = 0.0
+cache/0/25/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+cache/0/27/0/ascent = 0.0
+cache/0/27/0/descent = 0.0
+cache/0/27/0/underline_position = 0.0
+cache/0/27/0/underline_thickness = 0.0
+cache/0/27/0/scale = 1.0
+cache/0/28/0/ascent = 0.0
+cache/0/28/0/descent = 0.0
+cache/0/28/0/underline_position = 0.0
+cache/0/28/0/underline_thickness = 0.0
+cache/0/28/0/scale = 1.0
+cache/0/29/0/ascent = 0.0
+cache/0/29/0/descent = 0.0
+cache/0/29/0/underline_position = 0.0
+cache/0/29/0/underline_thickness = 0.0
+cache/0/29/0/scale = 1.0
+cache/0/30/0/ascent = 0.0
+cache/0/30/0/descent = 0.0
+cache/0/30/0/underline_position = 0.0
+cache/0/30/0/underline_thickness = 0.0
+cache/0/30/0/scale = 1.0
+cache/0/31/0/ascent = 0.0
+cache/0/31/0/descent = 0.0
+cache/0/31/0/underline_position = 0.0
+cache/0/31/0/underline_thickness = 0.0
+cache/0/31/0/scale = 1.0
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/33/0/ascent = 0.0
+cache/0/33/0/descent = 0.0
+cache/0/33/0/underline_position = 0.0
+cache/0/33/0/underline_thickness = 0.0
+cache/0/33/0/scale = 1.0
+cache/0/34/0/ascent = 0.0
+cache/0/34/0/descent = 0.0
+cache/0/34/0/underline_position = 0.0
+cache/0/34/0/underline_thickness = 0.0
+cache/0/34/0/scale = 1.0
+cache/0/35/0/ascent = 0.0
+cache/0/35/0/descent = 0.0
+cache/0/35/0/underline_position = 0.0
+cache/0/35/0/underline_thickness = 0.0
+cache/0/35/0/scale = 1.0
+cache/0/36/0/ascent = 0.0
+cache/0/36/0/descent = 0.0
+cache/0/36/0/underline_position = 0.0
+cache/0/36/0/underline_thickness = 0.0
+cache/0/36/0/scale = 1.0
+cache/0/37/0/ascent = 0.0
+cache/0/37/0/descent = 0.0
+cache/0/37/0/underline_position = 0.0
+cache/0/37/0/underline_thickness = 0.0
+cache/0/37/0/scale = 1.0
+cache/0/38/0/ascent = 0.0
+cache/0/38/0/descent = 0.0
+cache/0/38/0/underline_position = 0.0
+cache/0/38/0/underline_thickness = 0.0
+cache/0/38/0/scale = 1.0
+cache/0/39/0/ascent = 0.0
+cache/0/39/0/descent = 0.0
+cache/0/39/0/underline_position = 0.0
+cache/0/39/0/underline_thickness = 0.0
+cache/0/39/0/scale = 1.0
+cache/0/40/0/ascent = 0.0
+cache/0/40/0/descent = 0.0
+cache/0/40/0/underline_position = 0.0
+cache/0/40/0/underline_thickness = 0.0
+cache/0/40/0/scale = 1.0
+cache/0/41/0/ascent = 0.0
+cache/0/41/0/descent = 0.0
+cache/0/41/0/underline_position = 0.0
+cache/0/41/0/underline_thickness = 0.0
+cache/0/41/0/scale = 1.0
+cache/0/42/0/ascent = 0.0
+cache/0/42/0/descent = 0.0
+cache/0/42/0/underline_position = 0.0
+cache/0/42/0/underline_thickness = 0.0
+cache/0/42/0/scale = 1.0
+cache/0/43/0/ascent = 0.0
+cache/0/43/0/descent = 0.0
+cache/0/43/0/underline_position = 0.0
+cache/0/43/0/underline_thickness = 0.0
+cache/0/43/0/scale = 1.0
+cache/0/44/0/ascent = 0.0
+cache/0/44/0/descent = 0.0
+cache/0/44/0/underline_position = 0.0
+cache/0/44/0/underline_thickness = 0.0
+cache/0/44/0/scale = 1.0
+cache/0/45/0/ascent = 0.0
+cache/0/45/0/descent = 0.0
+cache/0/45/0/underline_position = 0.0
+cache/0/45/0/underline_thickness = 0.0
+cache/0/45/0/scale = 1.0
+cache/0/46/0/ascent = 0.0
+cache/0/46/0/descent = 0.0
+cache/0/46/0/underline_position = 0.0
+cache/0/46/0/underline_thickness = 0.0
+cache/0/46/0/scale = 1.0
+cache/0/47/0/ascent = 0.0
+cache/0/47/0/descent = 0.0
+cache/0/47/0/underline_position = 0.0
+cache/0/47/0/underline_thickness = 0.0
+cache/0/47/0/scale = 1.0
+cache/0/48/0/ascent = 0.0
+cache/0/48/0/descent = 0.0
+cache/0/48/0/underline_position = 0.0
+cache/0/48/0/underline_thickness = 0.0
+cache/0/48/0/scale = 1.0
+cache/0/49/0/ascent = 0.0
+cache/0/49/0/descent = 0.0
+cache/0/49/0/underline_position = 0.0
+cache/0/49/0/underline_thickness = 0.0
+cache/0/49/0/scale = 1.0
+cache/0/50/0/ascent = 0.0
+cache/0/50/0/descent = 0.0
+cache/0/50/0/underline_position = 0.0
+cache/0/50/0/underline_thickness = 0.0
+cache/0/50/0/scale = 1.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_685lo"]
+font = SubResource("FontFile_wohep")
+font_size = 50
+font_color = Color(0.7550983, 0.21121946, 0.20950803, 1)
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_wohep"]
+font_size = 20
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_64ctb"]
+font_size = 20
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 20
+
+[node name="Control" type="Control" unique_id=986110111]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1517.8295
+offset_bottom = 835.65894
+scale = Vector2(1.29, 1.29)
+script = ExtResource("1_h7a2f")
+
+[node name="Background" type="TextureRect" parent="." unique_id=807494132]
+layout_mode = 0
+offset_left = -4.651161
+offset_top = -4.6511626
+offset_right = 1201.4061
+offset_bottom = 688.21576
+scale = Vector2(1.29, 1.29)
+texture = ExtResource("1_i26rj")
+
+[node name="Play" type="Button" parent="." unique_id=1875589864]
+modulate = Color(0, 0.60468477, 0.10200081, 1)
+layout_mode = 0
+offset_left = 622.48065
+offset_top = 240.31009
+offset_right = 700.74304
+offset_bottom = 274.4716
+scale = Vector2(1.94, 1.94)
+text = "Play"
+
+[node name="Settings" type="Button" parent="." unique_id=753557149]
+modulate = Color(0.12883383, 0.55408365, 0.6696922, 1)
+layout_mode = 0
+offset_left = 631.00775
+offset_top = 411.6279
+offset_right = 709.2708
+offset_bottom = 445.7894
+scale = Vector2(1.715, 1.715)
+text = "Settings"
+script = ExtResource("3_qoqlk")
+
+[node name="Exit" type="Button" parent="." unique_id=1080297637]
+modulate = Color(0.6723063, 0.19416776, 0.19263992, 1)
+layout_mode = 0
+offset_left = 632.55817
+offset_top = 602.32556
+offset_right = 710.81903
+offset_bottom = 636.48706
+scale = Vector2(1.67, 1.67)
+text = "Exit"
+
+[node name="Title" type="Label" parent="." unique_id=997952788]
+layout_mode = 0
+offset_left = 501.55048
+offset_top = 17.054264
+offset_right = 807.5505
+offset_bottom = 84.05426
+scale = Vector2(1.29, 1.29)
+text = "The Last Hour"
+label_settings = SubResource("LabelSettings_685lo")
+
+[node name="Version" type="Label" parent="." unique_id=1601247292]
+layout_mode = 0
+offset_left = 8.527132
+offset_top = 779.06995
+offset_right = 73.52713
+offset_bottom = 807.06995
+scale = Vector2(1.29, 1.29)
+text = "ALPHA"
+label_settings = SubResource("LabelSettings_wohep")
+
+[node name="Credits" type="Label" parent="." unique_id=1778411096]
+layout_mode = 0
+offset_left = 1225.5814
+offset_top = 773.64343
+offset_right = 1420.5814
+offset_bottom = 801.64343
+scale = Vector2(1.29, 1.29)
+text = "Made by SolidQuote"
+label_settings = SubResource("LabelSettings_64ctb")
+
+[node name="Music" type="AudioStreamPlayer2D" parent="." unique_id=696240767]
+scale = Vector2(1.29, 1.29)
+stream = ExtResource("2_eiy7p")
+autoplay = true
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
