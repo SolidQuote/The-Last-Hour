@@ -30,9 +30,7 @@ offset_top = 396.0
 offset_right = 1838.0
 offset_bottom = 618.0
 text = "You are trapped in a cave during the final hour of a war waged against humanity. The entrance to the cave has collapsed.
-
 You are not alone.
-
 Find a new way out."
 label_settings = SubResource("LabelSettings_685lo")
 horizontal_alignment = 1

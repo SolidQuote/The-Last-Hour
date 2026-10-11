@@ -281,9 +281,9 @@ label_settings = SubResource("LabelSettings_wohep")
 
 [node name="Credits" type="Label" parent="." unique_id=1778411096]
 layout_mode = 0
-offset_left = 1225.5814
+offset_left = 1081.3954
 offset_top = 773.64343
-offset_right = 1420.5814
+offset_right = 1387.3954
 offset_bottom = 801.64343
 scale = Vector2(1.29, 1.29)
 text = "Made by SolidQuote and Potato"
