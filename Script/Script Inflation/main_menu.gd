@@ -2,12 +2,11 @@ extends Control
 
 
 func _on_play_pressed() -> void:
-	get_tree().change_scene_to_file("res://storyscreen.tscn")
-
+	get_tree().change_scene_to_file("res://Scenes/storyscreen.tscn")
 
 
 func _on_settings_pressed() -> void:
-	get_tree().change_scene_to_file("res://settings.tscn")
+	get_tree().change_scene_to_file("res://Scenes/settings.tscn")
 
 
 func _on_exit_pressed() -> void:

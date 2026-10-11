@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cyow3yjq0na4s"]
+
+[ext_resource type="Script" uid="uid://fadu32xci3wl" path="res://Scenes/player.gd" id="1_cvnsp"]
+[ext_resource type="Texture2D" uid="uid://d36tgft61a57v" path="res://Images/Enitys/Player/player(The_Last_Hour).png" id="1_v0iea"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
+size = Vector2(11, 9)
+
+[node name="player" type="CharacterBody2D" unique_id=38390488]
+script = ExtResource("1_cvnsp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1318822368]
+texture = ExtResource("1_v0iea")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1980766167]
+position = Vector2(0.5, -2.5)
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=932508706]
+zoom = Vector2(15, 10)

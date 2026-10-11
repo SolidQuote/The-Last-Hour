@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b2yoqidhation"]
+
+[ext_resource type="Texture2D" uid="uid://c6spf6346m45" path="res://Images/Obj/Wall/Bunker/Bunker_Wall-1.png" id="1_mqtjy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
+size = Vector2(16, 16)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_riqys"]
+polygon = PackedVector2Array(-8, -8, -8, 8, 8, 8, 8, -8)
+
+[node name="Bunker_Wall" type="StaticBody2D" unique_id=505253917]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=729917154]
+texture = ExtResource("1_mqtjy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=830254291]
+shape = SubResource("RectangleShape2D_bhunq")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="." unique_id=319652233]
+occluder = SubResource("OccluderPolygon2D_riqys")

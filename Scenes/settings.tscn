@@ -1,9 +1,8 @@
 [gd_scene format=3 uid="uid://yvakv0n5tt4e"]
 
-[ext_resource type="Texture2D" uid="uid://ba7wu3sqerhpd" path="res://istockphoto-641236218-612x612.jpg" id="1_3ykye"]
-[ext_resource type="AudioStream" uid="uid://dvk5qcv3x1due" path="res://Music/631532__szegvari__alien-planet-wind-base-wave-dark-horror-thriller-atmo-atmosphere-cinematic-surround.mp3" id="1_x2hje"]
-[ext_resource type="Script" uid="uid://b15bhgw48kgo" path="res://Script/Script Inflation/margin_container.gd" id="3_3ykye"]
-
+[ext_resource type="Texture2D" uid="uid://ba7wu3sqerhpd" path="res://Images/Other/istockphoto-641236218-612x612.jpg" id="1_lhmql"]
+[ext_resource type="AudioStream" uid="uid://dvk5qcv3x1due" path="res://Music/631532__szegvari__alien-planet-wind-base-wave-dark-horror-thriller-atmo-atmosphere-cinematic-surround.mp3" id="2_aaqfp"]
+[ext_resource type="Script" uid="uid://b15bhgw48kgo" path="res://Script/Script Inflation/margin_container.gd" id="3_j2dne"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_685lo"]
 font_size = 30
@@ -18,10 +17,10 @@ offset_bottom = 40.0
 layout_mode = 0
 offset_right = 2057.0
 offset_bottom = 1144.0
-texture = ExtResource("1_3ykye")
+texture = ExtResource("1_lhmql")
 
 [node name="Music" type="AudioStreamPlayer2D" parent="." unique_id=1374386161]
-stream = ExtResource("1_x2hje")
+stream = ExtResource("2_aaqfp")
 autoplay = true
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1198815445]
@@ -36,7 +35,7 @@ offset_bottom = 610.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.665, 1.665)
-script = ExtResource("3_3ykye")
+script = ExtResource("3_j2dne")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1982509383]
 layout_mode = 2

@@ -1,9 +1,8 @@
 [gd_scene format=3 uid="uid://bvgctg6lwo0xe"]
 
-[ext_resource type="Texture2D" uid="uid://c3wp35awntjic" path="res://Images/Other/aed0156189df39e2a65d11d3370de14c.jpg" id="1_4gspy"]
-[ext_resource type="AudioStream" uid="uid://bsh2a3w6s5dlu" path="res://Music/753859__evanboyerman__outdoor-fireworks-ambience-in-suburb-neighborhood-at-night-stereo-ambience.mp3" id="1_aj41r"]
-[ext_resource type="Script" uid="uid://d2876b1wj6hop" path="res://Script/Script Inflation/storyscreen.gd" id="1_dx26i"]
-
+[ext_resource type="Script" uid="uid://dge7o0h7k15mk" path="res://Script/Script Inflation/storyscreen.gd" id="1_ktnpb"]
+[ext_resource type="Texture2D" uid="uid://c3wp35awntjic" path="res://Images/Other/aed0156189df39e2a65d11d3370de14c.jpg" id="2_u2cgi"]
+[ext_resource type="AudioStream" uid="uid://bsh2a3w6s5dlu" path="res://Music/753859__evanboyerman__outdoor-fireworks-ambience-in-suburb-neighborhood-at-night-stereo-ambience.mp3" id="3_d5qhq"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_685lo"]
 font_size = 30
@@ -16,13 +15,13 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 1924.0
 offset_bottom = 1082.0
-script = ExtResource("1_dx26i")
+script = ExtResource("1_ktnpb")
 
 [node name="background" type="TextureRect" parent="." unique_id=755355388]
 layout_mode = 0
 offset_right = 1962.0
 offset_bottom = 1096.0
-texture = ExtResource("1_4gspy")
+texture = ExtResource("2_u2cgi")
 
 [node name="Story text" type="Label" parent="." unique_id=1772550546]
 layout_mode = 0
@@ -39,17 +38,17 @@ label_settings = SubResource("LabelSettings_685lo")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="skip" type="Button" parent="." unique_id=701870047]
+[node name="continue" type="Button" parent="." unique_id=701870047]
 layout_mode = 0
-offset_left = 855.0
-offset_top = 736.0
-offset_right = 934.0
-offset_bottom = 767.0
+offset_left = 848.0
+offset_top = 798.0
+offset_right = 927.0
+offset_bottom = 829.0
 scale = Vector2(2.855, 2.855)
 text = "Continue"
 
 [node name="gunfire" type="AudioStreamPlayer2D" parent="." unique_id=1076533494]
-stream = ExtResource("1_aj41r")
+stream = ExtResource("3_d5qhq")
 autoplay = true
 
-[connection signal="pressed" from="skip" to="." method="_on_skip_pressed"]
+[connection signal="pressed" from="continue" to="." method="_on_continue_pressed"]

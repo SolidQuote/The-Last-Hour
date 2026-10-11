@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://2odpqu65iot5"]
+
+[ext_resource type="PackedScene" uid="uid://b2yoqidhation" path="res://Scenes/bunker_wall.tscn" id="1_k5f4k"]
+[ext_resource type="PackedScene" uid="uid://cyow3yjq0na4s" path="res://Scenes/player.tscn" id="2_6phgx"]
+
+[node name="Level" type="Node2D" unique_id=1386698794]
+
+[node name="WF" type="Node2D" parent="." unique_id=815087588]
+
+[node name="Wall" type="Node2D" parent="WF" unique_id=685551659]
+
+[node name="Bunker_Wall" parent="WF/Wall" unique_id=505253917 instance=ExtResource("1_k5f4k")]
+position = Vector2(8, 8)
+
+[node name="Bunker_Wall2" parent="WF/Wall" unique_id=702811456 instance=ExtResource("1_k5f4k")]
+position = Vector2(24, 8)
+
+[node name="Bunker_Wall3" parent="WF/Wall" unique_id=1883351073 instance=ExtResource("1_k5f4k")]
+position = Vector2(40, 8)
+
+[node name="Bunker_Wall4" parent="WF/Wall" unique_id=450935655 instance=ExtResource("1_k5f4k")]
+position = Vector2(56, 8)
+
+[node name="Bunker_Wall5" parent="WF/Wall" unique_id=699674102 instance=ExtResource("1_k5f4k")]
+position = Vector2(72, 8)
+
+[node name="Bunker_Wall6" parent="WF/Wall" unique_id=1366082431 instance=ExtResource("1_k5f4k")]
+position = Vector2(88, 8)
+
+[node name="Bunker_Wall7" parent="WF/Wall" unique_id=1067294157 instance=ExtResource("1_k5f4k")]
+position = Vector2(104, 8)
+
+[node name="Bunker_Wall8" parent="WF/Wall" unique_id=1491897394 instance=ExtResource("1_k5f4k")]
+position = Vector2(120, 8)
+
+[node name="Bunker_Wall9" parent="WF/Wall" unique_id=1124039697 instance=ExtResource("1_k5f4k")]
+position = Vector2(136, 8)
+
+[node name="Bunker_Wall10" parent="WF/Wall" unique_id=786580943 instance=ExtResource("1_k5f4k")]
+position = Vector2(152, 8)
+
+[node name="Bunker_Wall11" parent="WF/Wall" unique_id=1013936238 instance=ExtResource("1_k5f4k")]
+position = Vector2(168, 8)
+
+[node name="Bunker_Wall12" parent="WF/Wall" unique_id=1493702814 instance=ExtResource("1_k5f4k")]
+position = Vector2(184, 8)
+
+[node name="Bunker_Wall13" parent="WF/Wall" unique_id=358832652 instance=ExtResource("1_k5f4k")]
+position = Vector2(8, 72)
+
+[node name="Bunker_Wall14" parent="WF/Wall" unique_id=1998517976 instance=ExtResource("1_k5f4k")]
+position = Vector2(24, 72)
+
+[node name="Bunker_Wall15" parent="WF/Wall" unique_id=669364263 instance=ExtResource("1_k5f4k")]
+position = Vector2(40, 72)
+
+[node name="Bunker_Wall16" parent="WF/Wall" unique_id=132017153 instance=ExtResource("1_k5f4k")]
+position = Vector2(56, 72)
+
+[node name="Bunker_Wall17" parent="WF/Wall" unique_id=2096111751 instance=ExtResource("1_k5f4k")]
+position = Vector2(72, 72)
+
+[node name="Bunker_Wall18" parent="WF/Wall" unique_id=621763036 instance=ExtResource("1_k5f4k")]
+position = Vector2(88, 72)
+
+[node name="Bunker_Wall19" parent="WF/Wall" unique_id=1340774117 instance=ExtResource("1_k5f4k")]
+position = Vector2(104, 72)
+
+[node name="Bunker_Wall20" parent="WF/Wall" unique_id=655313432 instance=ExtResource("1_k5f4k")]
+position = Vector2(120, 72)
+
+[node name="Bunker_Wall21" parent="WF/Wall" unique_id=1835681586 instance=ExtResource("1_k5f4k")]
+position = Vector2(136, 72)
+
+[node name="Bunker_Wall22" parent="WF/Wall" unique_id=1262505519 instance=ExtResource("1_k5f4k")]
+position = Vector2(152, 72)
+
+[node name="Bunker_Wall23" parent="WF/Wall" unique_id=2026943026 instance=ExtResource("1_k5f4k")]
+position = Vector2(168, 72)
+
+[node name="Bunker_Wall24" parent="WF/Wall" unique_id=1722795724 instance=ExtResource("1_k5f4k")]
+position = Vector2(184, 72)
+
+[node name="Bunker_Wall25" parent="WF/Wall" unique_id=806145734 instance=ExtResource("1_k5f4k")]
+position = Vector2(-8, 72)
+
+[node name="Bunker_Wall26" parent="WF/Wall" unique_id=1978632585 instance=ExtResource("1_k5f4k")]
+position = Vector2(-8, 8)
+
+[node name="Bunker_Wall27" parent="WF/Wall" unique_id=345839731 instance=ExtResource("1_k5f4k")]
+position = Vector2(-8, 24)
+
+[node name="Bunker_Wall28" parent="WF/Wall" unique_id=239195220 instance=ExtResource("1_k5f4k")]
+position = Vector2(-8, 40)
+
+[node name="Bunker_Wall29" parent="WF/Wall" unique_id=1861419170 instance=ExtResource("1_k5f4k")]
+position = Vector2(-8, 56)
+
+[node name="Floor" type="Node2D" parent="WF" unique_id=1423899976]
+
+[node name="Enitys" type="Node2D" parent="." unique_id=86010944]
+
+[node name="Player" type="Node2D" parent="Enitys" unique_id=1539566175]
+
+[node name="player" parent="Enitys/Player" unique_id=38390488 instance=ExtResource("2_6phgx")]
+position = Vector2(8, 24)
+
+[node name="Bad" type="Node2D" parent="Enitys" unique_id=1715559221]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6spf6346m45"
-path="res://.godot/imported/Bunker_Wall-1.png-a9c15182cd7ba74c1ea7863d4fc33bcb.ctex"
+uid="uid://d36tgft61a57v"
+path="res://.godot/imported/player(The_Last_Hour).png-f64fc77dd335da1e390ff66737043315.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Bunker_Wall-1.png"
-dest_files=["res://.godot/imported/Bunker_Wall-1.png-a9c15182cd7ba74c1ea7863d4fc33bcb.ctex"]
+source_file="res://Images/Enitys/Player/player(The_Last_Hour).png"
+dest_files=["res://.godot/imported/player(The_Last_Hour).png-f64fc77dd335da1e390ff66737043315.ctex"]
 
 [params]
 
