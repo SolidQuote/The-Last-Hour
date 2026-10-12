@@ -8,7 +8,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bhunq"]
 size = Vector2(12, 10)
 
-[node name="player" type="CharacterBody2D" unique_id=38390488]
+[node name="player" type="CharacterBody2D" unique_id=38390488 groups=["player"]]
 script = ExtResource("1_cvnsp")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1318822368]
@@ -27,8 +27,8 @@ energy = 1.5
 texture = ExtResource("3_6t5aa")
 
 [node name="FleshLight" type="PointLight2D" parent="." unique_id=1819684353]
-position = Vector2(0, -16)
-scale = Vector2(1.2, 1)
+position = Vector2(5, -18)
+scale = Vector2(1.5, 1.5)
 color = Color(0.6786473, 0.67480093, 0.6643323, 1)
 energy = 1.5
 texture = ExtResource("4_vgqql")
