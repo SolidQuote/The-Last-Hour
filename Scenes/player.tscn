@@ -22,13 +22,15 @@ shape = SubResource("RectangleShape2D_bhunq")
 zoom = Vector2(15, 10)
 
 [node name="PointLight2D" type="PointLight2D" parent="." unique_id=2090559877]
-color = Color(0.6786473, 0.67480093, 0.6643323, 1)
+position = Vector2(4.5000005, -21.000002)
+scale = Vector2(2.1875, 3.2500002)
+color = Color(0.039215688, 0.039215688, 0.039215688, 1)
 energy = 1.5
 texture = ExtResource("3_6t5aa")
 
 [node name="FleshLight" type="PointLight2D" parent="." unique_id=1819684353]
-position = Vector2(5, -18)
-scale = Vector2(1.5, 1.5)
-color = Color(0.6786473, 0.67480093, 0.6643323, 1)
+position = Vector2(4.9999995, -22)
+scale = Vector2(1.875, 2.0000002)
+color = Color(0.14962524, 0.14770749, 0.14195743, 1)
 energy = 1.5
 texture = ExtResource("4_vgqql")
