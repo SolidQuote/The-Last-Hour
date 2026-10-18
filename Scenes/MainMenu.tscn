@@ -271,20 +271,20 @@ label_settings = SubResource("LabelSettings_685lo")
 
 [node name="Version" type="Label" parent="." unique_id=1601247292]
 layout_mode = 0
-offset_left = 8.527132
-offset_top = 779.06995
-offset_right = 73.52713
-offset_bottom = 807.06995
+offset_left = 0.77519464
+offset_top = 742.6357
+offset_right = 179.77519
+offset_bottom = 770.6357
 scale = Vector2(1.29, 1.29)
-text = "ALPHA"
+text = "Alpha Version 0.02"
 label_settings = SubResource("LabelSettings_wohep")
 
 [node name="Credits" type="Label" parent="." unique_id=1778411096]
 layout_mode = 0
-offset_left = 1081.3954
-offset_top = 773.64343
-offset_right = 1387.3954
-offset_bottom = 801.64343
+offset_left = 1084.4962
+offset_top = 741.8604
+offset_right = 1390.4962
+offset_bottom = 769.8604
 scale = Vector2(1.29, 1.29)
 text = "Made by SolidQuote and Potato"
 label_settings = SubResource("LabelSettings_64ctb")
