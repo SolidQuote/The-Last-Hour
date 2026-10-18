@@ -48,6 +48,9 @@ tile_set = SubResource("TileSet_bhunq")
 [node name="Battery" parent="Objects/Goonable" unique_id=1807093380 instance=ExtResource("5_wqkje")]
 position = Vector2(75, 0)
 
+[node name="Battery2" parent="Objects/Goonable" unique_id=311203197 instance=ExtResource("5_wqkje")]
+position = Vector2(149, 341)
+
 [node name="Ungoonable" type="Node2D" parent="Objects" unique_id=2103123593]
 
 [node name="Enitys" type="Node2D" parent="." unique_id=86010944]

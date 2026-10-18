@@ -4,7 +4,7 @@ const SPEED = 50.0
 
 @export var max_energery = 100
 @export var current_energery = 100
-@export var balls_draining_rate = 10.0
+@export var balls_draining_rate = 2.0
 
 @onready var light100 = preload("res://Images/Enitys/Player/FlashLight.png")
 @onready var light75 = preload("res://Images/Enitys/Player/FlashLight(75%).png")
@@ -34,6 +34,8 @@ func _process(delta):
 	if current_energery > 75:
 		pl.color = Color("201f1f")
 		fleshlight.texture = light100
+		fleshlight.visible = true
+		pl.visible = true
 	
 	elif current_energery > 40:
 		pl.color = Color("1a1919")
@@ -42,9 +44,16 @@ func _process(delta):
 	elif current_energery > 15:
 		pl.color = Color("0a0a0a")
 		fleshlight.texture = light40
+		fleshlight.visible = true
+		pl.visible = true
 	
 	elif current_energery > 0:
 		fleshlight.texture = light15
+		pl.visible = false
 	
 	else:
 		fleshlight.visible = false
+
+func add_battery(amount: float) -> void:
+	current_energery += amount
+	current_energery = min(current_energery, max_energery)
