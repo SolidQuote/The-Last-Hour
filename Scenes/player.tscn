@@ -31,6 +31,6 @@ texture = ExtResource("3_6t5aa")
 [node name="FleshLight" type="PointLight2D" parent="." unique_id=1819684353]
 position = Vector2(4.9999995, -22)
 scale = Vector2(1.875, 2.0000002)
-color = Color(0.14962524, 0.14770749, 0.14195743, 1)
+color = Color(0.21682316, 0.21682227, 0.20673442, 1)
 energy = 1.5
 texture = ExtResource("4_vgqql")

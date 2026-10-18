@@ -6,6 +6,11 @@ const SPEED = 50.0
 @export var current_energery = 100
 @export var balls_draining_rate = 10.0
 
+@onready var light100 = preload("res://Images/Enitys/Player/FlashLight.png")
+@onready var light75 = preload("res://Images/Enitys/Player/FlashLight(75%).png")
+@onready var light40 = preload("res://Images/Enitys/Player/FlashLight(40%).png")
+@onready var light15 = preload("res://Images/Enitys/Player/FlashLight(15%).png")
+
 @onready var pl = $PointLight2D
 @onready var fleshlight: PointLight2D = $FleshLight
 @onready var player = $"."
@@ -26,18 +31,20 @@ func _process(delta):
 		current_energery -= balls_draining_rate * delta
 		current_energery = max(current_energery, 0.0)
 	
-	if current_energery < 75:
+	if current_energery > 75:
 		pl.color = Color("201f1f")
-		fleshlight.color = Color("979693")
+		fleshlight.texture = light100
 	
-	if current_energery < 40:
+	elif current_energery > 40:
 		pl.color = Color("1a1919")
-		fleshlight.color = Color("686764")
+		fleshlight.texture = light75
 	
-	if current_energery < 10:
+	elif current_energery > 15:
 		pl.color = Color("0a0a0a")
-		fleshlight.color = Color("262624")
+		fleshlight.texture = light40
+	
+	elif current_energery > 0:
+		fleshlight.texture = light15
 	
 	else:
-		pl.color = Color("272626")
-		fleshlight.color = Color("adaca9")
+		fleshlight.visible = false
