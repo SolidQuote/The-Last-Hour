@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 const SPEED = 50.0
 
+@export var superBattie = 0
 @export var max_energery = 100
 @export var current_energery = 100
 @export var balls_draining_rate = 2.0
@@ -57,3 +58,13 @@ func _process(delta):
 func add_battery(amount: float) -> void:
 	current_energery += amount
 	current_energery = min(current_energery, max_energery)
+	print(current_energery)
+
+func add_superBattie(amount: float) -> void:
+	superBattie += amount
+	superBattie = min(superBattie, 3)
+	print("Player has: ", superBattie, " Super Batterys")
+
+func remove_superBattie(amount: float) -> void:
+	superBattie -= amount
+	superBattie = max(superBattie, 0.0)

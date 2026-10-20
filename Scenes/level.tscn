@@ -4,7 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://c6spf6346m45" path="res://Images/Obj/Wall/Bunker/Bunker_Wall-1.png" id="1_k5f4k"]
 [ext_resource type="PackedScene" uid="uid://cyow3yjq0na4s" path="res://Scenes/player.tscn" id="2_6phgx"]
 [ext_resource type="Texture2D" uid="uid://bdxsobw2sdfu0" path="res://Images/Obj/Floor/Bunker/BunkerFloor.png" id="2_81xng"]
+[ext_resource type="PackedScene" uid="uid://psu68wwt5d70" path="res://Scenes/genertor.tscn" id="5_8c0lf"]
 [ext_resource type="PackedScene" uid="uid://taatlvjvwe3q" path="res://Scenes/battery.tscn" id="5_wqkje"]
+[ext_resource type="PackedScene" uid="uid://cm1qxoi5yg7f8" path="res://Scenes/super_battie.tscn" id="6_754fn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_81xng"]
 texture = ExtResource("2_81xng")
@@ -51,6 +53,19 @@ position = Vector2(75, 0)
 [node name="Battery2" parent="Objects/Goonable" unique_id=311203197 instance=ExtResource("5_wqkje")]
 position = Vector2(149, 341)
 
+[node name="Genertor" parent="Objects/Goonable" unique_id=796100678 instance=ExtResource("5_8c0lf")]
+position = Vector2(261, 6)
+rotation = 1.5707964
+
+[node name="SuperBattie" parent="Objects/Goonable" unique_id=1257967966 instance=ExtResource("6_754fn")]
+position = Vector2(238, 6)
+
+[node name="SuperBattie2" parent="Objects/Goonable" unique_id=724071808 instance=ExtResource("6_754fn")]
+position = Vector2(211, 6)
+
+[node name="SuperBattie3" parent="Objects/Goonable" unique_id=2098342624 instance=ExtResource("6_754fn")]
+position = Vector2(225, 6)
+
 [node name="Ungoonable" type="Node2D" parent="Objects" unique_id=2103123593]
 
 [node name="Enitys" type="Node2D" parent="." unique_id=86010944]
@@ -63,4 +78,4 @@ position = Vector2(35, 8)
 [node name="Bad" type="Node2D" parent="Enitys" unique_id=1715559221]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1369919141]
-color = Color(0.011087579, 0.011087578, 0.01108758, 1)
+color = Color(0.57700837, 0.5770084, 0.57700837, 1)

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cm1qxoi5yg7f8"]
+
+[ext_resource type="Script" uid="uid://dfyca14rxon46" path="res://super_battie.gd" id="1_d11dd"]
+[ext_resource type="Texture2D" uid="uid://dq7j4fc4a4kos" path="res://Images/Obj/Goon/SuperBatties.png" id="2_o2jyo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d11dd"]
+
+[node name="SuperBattie" type="Area2D" unique_id=1257967966]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_d11dd")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1980624072]
+texture = ExtResource("2_o2jyo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1808307615]
+shape = SubResource("RectangleShape2D_d11dd")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

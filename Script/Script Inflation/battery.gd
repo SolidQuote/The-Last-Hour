@@ -10,12 +10,12 @@ func _ready():
 func _on_body_entered(body):
 	if body.is_in_group("player"):
 		player_in_range = body
-		print("Player is on the thou battery")
+		#print("Player is on the thou battery")
 
 func _on_body_exited(body):
 	if body == player_in_range:
 		player_in_range = null
-		print("Player left the battery.")
+		#print("Player left the battery.")
 
 func _unhandled_input(event: InputEvent) -> void:
 	if player_in_range != null and event.is_action_pressed("interact"):
