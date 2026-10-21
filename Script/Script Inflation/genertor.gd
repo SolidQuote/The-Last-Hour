@@ -29,7 +29,7 @@ func _on_body_exited(body):
 func _unhandled_input(event: InputEvent) -> void:
 	if player_in_range != null and event.is_action_pressed("interact"):
 		if genOn == true:
-			print("Sheila is already full and leaking!")
+			print("Sheila's already full and purring!")
 		
 		if player_in_range.superBattie >= 1:
 			player_in_range.remove_superBattie(1)
