@@ -79,7 +79,7 @@ position = Vector2(35, 8)
 [node name="Bad" type="Node2D" parent="Enitys" unique_id=1715559221]
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1369919141]
-color = Color(0.57700837, 0.5770084, 0.57700837, 1)
+color = Color(0.011087595, 0.011087573, 0.011087585, 1)
 
 [node name="Sounds" type="Node2D" parent="." unique_id=1973459569]
 

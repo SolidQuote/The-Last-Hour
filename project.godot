@@ -10,6 +10,7 @@ config_version=5
 
 [application]
 
+config/name="TheLastHour"
 run/main_scene="uid://bax7xx8wkxhrf"
 config/features=PackedStringArray("4.7")
 
